@@ -3,17 +3,279 @@
     padding: 0;
     list-style: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
 body{
     background-color: #001F23;
 }
+
 .barra{
+    font-family: "roboto", sans-serif;
+    font-size: large;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     color: white;
 }
+.barra a{
+    color: inherit;
+    text-decoration: none;
+}
 .barra img{
-    width: 9rem;
+    width: 15rem;
     height: auto;
+}
+.portada-general{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 60rem) minmax(0, 1fr);
+}
+.portada {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.slogan {
+    font-family: "roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 5%;
+    color: white;
+    text-align: left;
+    background-color: #2DE0A590;
+}
+.foto-fondo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.foto-lateral{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+}
+.carrusel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+}
+.diapositiva{
+    flex: 0 0 50%;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+#ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    /* background-color: #00363C; */
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: "roboto", sans-serif;
+    color: white;
+    border-color: #2DE0A5;
+    background-color: #004d55;
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+.ubicacion-info {
+    flex: 1 1 350px; /* Columna izquierda */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#ubicacion iframe {
+    flex: 1 1 450px; /* Columna derecha (mapa) */
+    height: 450px;
+    border: 0;
+    border-radius: 12px;
+}
+.seccion-planes {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #001F23;
+    font-family: "roboto", sans-serif;
+}
+
+.titulo-planes {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: white;
+}
+.contenedor-planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;      
+}
+.tarjeta-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    max-width: 320px;
+    background-color: #00363C;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: left;
+    color: white;
+}
+.plan-destacado {
+    border-color: #2DE0A5;
+    background-color: #004d55;
+}
+.etiqueta-popular {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #2DE0A5;
+    color: #001F23;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.tarjeta-plan h3 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+}
+.precio {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2DE0A5;
+    margin-bottom: 1.5rem;
+}
+.precio span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #b0c4c4;
+}
+.beneficios {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+.beneficios li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.btn-plan {
+    background-color: transparent;
+    color: #2DE0A5;
+    border: 2px solid #2DE0A5;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-destacado {
+    background-color: #2DE0A5;
+    color: #001F23;
+}
+.contenedor-formulario {
+    font-family: "roboto", sans-serif;
+    background-color: #001F23;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.formulario {
+    background-color: #00363C;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #070606;
+    width: 100%;
+    max-width: 400px;
+}
+.campo-formulario {
+    margin-bottom: 20px;
+}
+.subtitulo {
+    text-align: center;
+    color: white;
+}
+label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.boton-registrarse {
+    width: 100%;
+    background-color: #2DE0A5;
+    color: #0B1719;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.boton-registrarse:hover {
+    background-color: #2de0a4cc;
+}
+
+.boton-registrarse:active {
+    transform: scale(0.98);
+}
+
+.boton-limpiar {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 14px;
+    border: 2px solid;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.boton-limpiar:hover {
+    background-color: #ff6b4acc;
+}
+
+.boton-limpiar:active {
+    transform: scale(0.98);
 }
