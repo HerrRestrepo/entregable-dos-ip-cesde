@@ -18,20 +18,77 @@
         </nav>
     </header>
     <main>
-        <section>
-            <ul class="portada">
-                <li>Gym Los Makias: Fuerza, disciplina y berraquera.</li>
-                <li><img src="images/instalaciones_exteriores.jpg" alt="GlM desde fuera"></li>
-            </ul>
+        <section class="portada-general">
+            <img class="foto-lateral" src="images/fondo_lateral.jpeg" alt="fondo de emojis">
+            <div class="portada">
+                <h1 class="slogan">Gym Los Makias: Fuerza, Disciplina y Berraquera!</h1>
+                <img class="foto-fondo" src="images/instalaciones_exteriores.jpg" alt="GlM desde fuera">
+            </div>
+            <img class="foto-lateral" src="images/fondo_lateral.jpeg" alt="fondo de emojis">
+        </section>
+        <section class="carrusel">
+            <img class="diapositiva" src="images/interior_dl.jpg" alt="persona haciendo deadlift">
+            <img class="diapositiva" src="images/bench_zone.jpg" alt="persona entrenando pecho">
+            <img class="diapositiva" src="images/training_zone.jpg" alt="grupo de personas entrenando">
         </section>
         <section id="ubicacion">
-            <h2>Ubicación</h2>
-                <p>
-                    
-                </p>
+            <div class="ubicacion-info">
+                <h2>Ubicación</h2>
+                <div class="mapa">
+                    <p>
+                        Estamos ubicados en la Calle 52 # 48-35, Sector El Prado / Parque Principal, cerca de la Choza de Marco Fidel Suárez.
+                    </p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1982.7267538155018!2d-75.5575966!3d6.3352516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa41cc5564b%3A0x5eeff63ed4720b0e!2sCl.%2052%20%2348-35%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1791119504324!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </section>
-        <section id="planes">
-            <h2>Planes</h2>
+        <section id="planes" class="seccion-planes">
+            <h2 class="titulo-planes">Nuestros Planes</h2> 
+                <div class="contenedor-planes">
+                    <article class="tarjeta-plan">
+                        <h3>Plan Básico (Bronce)</h3>
+                        <p class="precio">$65.000 <span>/ Mes</span></p>
+                        <ul class="beneficios">
+                            <li>Acceso a sala de musculación</li>
+                            <li>Zona cardiovascular</li>
+                            <li>Valoración física inicial</li>
+                        </ul>
+                        <button class="btn-plan">Elegir Plan</button>
+                    </article>
+                    <article class="tarjeta-plan plan-destacado">
+                        <span class="etiqueta-popular">Más Popular</span>
+                        
+                        <h3>Plan Makia (Plata)</h3>
+                        <p class="precio">$95.000 <span>/ Mes</span></p>
+                        <ul class="beneficios">
+                            <li>Todo lo del Plan Básico</li>
+                            <li>Clases grupales (Spinning, Rumba, CrossFit)</li>
+                            <li>Casillero asignado</li>
+                        </ul>
+                        <button class="btn-plan btn-destacado">Elegir Plan</button>
+                    </article>
+                    <article class="tarjeta-plan">
+                        <h3>Plan Élite (Oro)</h3>
+                        <p class="precio">$150.000 <span>/ Mes</span></p>
+                        <ul class="beneficios">
+                            <li>Todo lo del Plan Makia</li>
+                            <li>4 sesiones al mes con entrenador personalizado</li>
+                            <li>Asesoría nutricional</li>
+                        </ul>
+                        <button class="btn-plan">Elegir Plan</button>
+                    </article>
+                    <article class="tarjeta-plan">
+                        <h3>Plan Anual Makia VIP</h3>
+                        <p class="precio">$900.000 <span>/ Anual</span></p>
+                        <ul class="beneficios">
+                            <li>Acceso total sin restricciones</li>
+                            <li>Kit deportivo de bienvenida</li>
+                            <li>1 mes congelable al año</li>
+                        </ul>
+                        <button class="btn-plan">Elegir Plan</button>
+                    </article>
+
+                </div>
         </section>
     </main>
 </body>
