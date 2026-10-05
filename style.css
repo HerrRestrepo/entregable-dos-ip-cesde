@@ -322,3 +322,86 @@ body{
     background-color: #2DE0A5;
 }
 
+.contenedor-formulario {
+    font-family: "roboto", sans-serif;
+    background-color: #001F23;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.formulario {
+    background-color: #00363C;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #070606;
+    width: 100%;
+    max-width: 400px;
+}
+.campo-formulario {
+    margin-bottom: 20px;
+}
+.subtitulo {
+    text-align: center;
+    color: white;
+}
+label {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.boton-registrarse {
+    width: 100%;
+    background-color: #2DE0A5;
+    color: #0B1719;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.boton-registrarse:hover {
+    background-color: #2de0a4cc;
+}
+
+.boton-registrarse:active {
+    transform: scale(0.98);
+}
+
+.boton-limpiar {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 14px;
+    border: 2px solid;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.boton-limpiar:hover {
+    background-color: #ff6b4acc;
+}
+
+.boton-limpiar:active {
+    transform: scale(0.98);
+}
