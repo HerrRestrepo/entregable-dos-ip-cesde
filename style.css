@@ -182,6 +182,7 @@ body{
     line-height: 1.4;
 }
 .btn-plan {
+    display: block;
     background-color: transparent;
     color: #2DE0A5;
     border: 2px solid #2DE0A5;
@@ -191,10 +192,17 @@ body{
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 }
 .btn-destacado {
     background-color: #2DE0A5;
     color: #001F23;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 }
 
 
